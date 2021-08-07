@@ -1,0 +1,4 @@
+source;share/mymsgs/local_setup.bash
+source;share/mymsgs/local_setup.dsv
+source;share/mymsgs/local_setup.sh
+source;share/mymsgs/local_setup.zsh

@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mymsgs/msg/Imu.msg
+// generated code does not contain a copyright notice
+
+
+module mymsgs {
+  module msg {
+    struct Imu {
+      uint32 time_boot_ms;
+
+      int16 xacc;
+
+      int16 yacc;
+
+      int16 zacc;
+
+      int16 xgyro;
+
+      int16 ygyro;
+
+      int16 zgyro;
+
+      int16 xmag;
+
+      int16 ymag;
+
+      int16 zmag;
+    };
+  };
+};

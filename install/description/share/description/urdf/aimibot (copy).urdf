@@ -1,0 +1,497 @@
+<?xml version="1.0"?>
+<robot
+  name="aimibot">
+
+  <link name="base_footprint"/>
+
+  <joint name="base_joint" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <parent link="base_footprint"/>
+      <child link="base_link" />
+  </joint>
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00 0.0 0.0"
+        rpy="0 0 0" />
+      <mass
+        value="3.9085" />
+      <inertia
+        ixx="0.18377"
+        ixy="0.0013005"
+        ixz="0.020054"
+        iyy="0.19957"
+        iyz="-0.0041718"
+        izz="0.039639" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="leftuniversalwheelbase_link">
+    <inertial>
+      <origin
+        xyz="-1.0216E-08 -0.0080301 0.0034389"
+        rpy="0 0 0" />
+      <mass
+        value="0.026051" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://description/meshes/leftuniversalwheelbase_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://description/meshes/leftuniversalwheelbase_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leftuniversalwheelbase_joint"
+    type="fixed">
+    <origin
+      xyz="0.2001 0.0064701 0.10505"
+      rpy="0.028257 1.3409 -3.1141" />
+    <parent
+      link="base_link" />
+    <child
+      link="leftuniversalwheelbase_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="leftuniversalwheel_link">
+    <inertial>
+      <origin
+        xyz="-3.0531E-16 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.041322" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://description/meshes/leftuniversalwheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://description/meshes/leftuniversalwheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leftuniversalwheel_joint"
+    type="fixed">
+    <origin
+      xyz="0 -0.031306 0.016006"
+      rpy="-1.4579 -4.0483E-16 4.3368E-18" />
+    <parent
+      link="leftuniversalwheelbase_link" />
+    <child
+      link="leftuniversalwheel_link" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="rightuniversalwheelbase_link">
+    <inertial>
+      <origin
+        xyz="-1.2633E-08 -0.007991 0.0034389"
+        rpy="0 0 0" />
+      <mass
+        value="0.0035932" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://description/meshes/rightuniversalwheelbase_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://description/meshes/rightuniversalwheelbase_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rightuniversalwheelbase_joint"
+    type="fixed">
+    <origin
+      xyz="0.2001 0.0051569 -0.10495"
+      rpy="0.11696 1.5156 -3.0248" />
+    <parent
+      link="base_link" />
+    <child
+      link="rightuniversalwheelbase_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="rightuniversalwheel_link">
+    <inertial>
+      <origin
+        xyz="1.3878E-17 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.29958" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://description/meshes/rightuniversalwheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://description/meshes/rightuniversalwheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rightuniversalwheel_joint"
+    type="fixed">
+    <origin
+      xyz="0 -0.0312671565150945 0.0160055106119301"
+      rpy="-1.89708150013336 3.24011278148451E-17 -1.21430643318376E-17" />
+    <parent
+      link="rightuniversalwheelbase_link" />
+    <child
+      link="rightuniversalwheel_link" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="leftwheel_link">
+    <inertial>
+      <origin
+        xyz="-2.99E-05 -1.1207E-16 -0.021057"
+        rpy="0 0 0" />
+      <mass
+        value="0.67833" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://description/meshes/leftwheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://description/meshes/leftwheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leftwheel_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0.148"
+      rpy="-3.14159265358979 3.34895633660176E-17 2.56288301873173" />
+    <parent
+      link="base_link" />
+    <child
+      link="leftwheel_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="rightwheel_link">
+    <inertial>
+      <origin
+        xyz="-2.99E-05 -1.0928E-16 -0.021057"
+        rpy="0 0 0" />
+      <mass
+        value="0.67833" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://description/meshes/rightwheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://description/meshes/rightwheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rightwheel_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.148"
+      rpy="-1.54E-17 5.9262E-17 1.3166" />
+    <parent
+      link="base_link" />
+    <child
+      link="rightwheel_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="laser_link">
+    <inertial>
+      <origin
+        xyz="0.00 0.00 0.0"
+        rpy="0 0 0" />
+      <mass
+        value="0.043218" />
+      <inertia
+        ixx="7.2888E-06"
+        ixy="-9.8675E-07"
+        ixz="-2.1013E-06"
+        iyy="1.292E-05"
+        iyz="-4.6013E-07"
+        izz="7.573E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://description/meshes/laser_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://description/meshes/laser_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="laser_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_footprint" />
+    <child
+      link="laser_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="realsense_link">
+    <inertial>
+      <origin
+        xyz="4.3234E-05 -5.8828E-05 -0.012713"
+        rpy="0 0 0" />
+      <mass
+        value="0.046209" />
+      <inertia
+        ixx="8.1368E-08"
+        ixy="2.4182E-09"
+        ixz="-3.6131E-07"
+        iyy="1.6858E-06"
+        iyz="5.4457E-10"
+        izz="1.6045E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://description/meshes/realsense_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://description/meshes/realsense_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="realsense_joint"
+    type="fixed">
+    <origin
+      xyz="0.22476 -0.5145 4.8928E-05"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="realsense_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+<!-- Drive diff controller -->
+<gazebo>
+  <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+    <alwaysOn>true</alwaysOn>
+    <legacyMode>false</legacyMode>
+    <updateRate>100</updateRate>
+    <leftJoint>wheel_left_joint</leftJoint>
+    <rightJoint>wheel_right_joint</rightJoint>
+    <wheelSeparation>0.365</wheelSeparation>
+    <wheelDiameter>0.125</wheelDiameter>
+    <torque>2.499</torque>
+    <commandTopic>cmd_vel</commandTopic>
+    <odometryTopic>odom</odometryTopic>
+    <odometryFrame>odom</odometryFrame>
+    <robotBaseFrame>base_footprint</robotBaseFrame>
+    <broadcastTF>1</broadcastTF>
+  </plugin>
+</gazebo>
+</robot>
+

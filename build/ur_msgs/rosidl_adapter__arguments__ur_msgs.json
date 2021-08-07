@@ -1,0 +1,15 @@
+{
+  "package_name": "ur_msgs",
+  "non_idl_tuples": [
+    "/home/kyxz/dev_ws/src/universal_robot/ur_msgs:msg/Analog.msg",
+    "/home/kyxz/dev_ws/src/universal_robot/ur_msgs:msg/Digital.msg",
+    "/home/kyxz/dev_ws/src/universal_robot/ur_msgs:msg/IOStates.msg",
+    "/home/kyxz/dev_ws/src/universal_robot/ur_msgs:msg/RobotStateRTMsg.msg",
+    "/home/kyxz/dev_ws/src/universal_robot/ur_msgs:msg/MasterboardDataMsg.msg",
+    "/home/kyxz/dev_ws/src/universal_robot/ur_msgs:msg/RobotModeDataMsg.msg",
+    "/home/kyxz/dev_ws/src/universal_robot/ur_msgs:msg/ToolDataMsg.msg",
+    "/home/kyxz/dev_ws/src/universal_robot/ur_msgs:srv/SetPayload.srv",
+    "/home/kyxz/dev_ws/src/universal_robot/ur_msgs:srv/SetSpeedSliderFraction.srv",
+    "/home/kyxz/dev_ws/src/universal_robot/ur_msgs:srv/SetIO.srv"
+  ]
+}

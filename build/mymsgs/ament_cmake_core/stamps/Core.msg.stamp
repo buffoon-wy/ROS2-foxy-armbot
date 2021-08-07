@@ -1,0 +1,8 @@
+uint32 time_boot_ms
+uint32 onboard_control_sensors_health
+uint16 load
+uint16 voltage_battery
+int16 current_battery
+int8 battery_remaining
+
+

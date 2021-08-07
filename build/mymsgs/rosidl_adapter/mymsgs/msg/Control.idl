@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mymsgs/msg/Control.msg
+// generated code does not contain a copyright notice
+
+
+module mymsgs {
+  module msg {
+    struct Control {
+      uint16 gpio;
+    };
+  };
+};

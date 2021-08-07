@@ -1,0 +1,30 @@
+// generated from rosidl_generator_dds_idl/resource/idl.idl.em
+// with input from ur_msgs:msg/Digital.idl
+// generated code does not contain a copyright notice
+
+#ifndef __ur_msgs__msg__digital__idl__
+#define __ur_msgs__msg__digital__idl__
+
+
+module ur_msgs {
+
+module msg {
+
+module dds_ {
+
+
+struct Digital_ {
+octet pin_;
+boolean state_;
+
+};
+
+
+};  // module dds_
+
+};  // module msg
+
+};  // module ur_msgs
+
+
+#endif  // __ur_msgs__msg__digital__idl__

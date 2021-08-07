@@ -1,0 +1,32 @@
+// generated from rosidl_generator_dds_idl/resource/idl.idl.em
+// with input from mymsgs:msg/Heart.idl
+// generated code does not contain a copyright notice
+
+#ifndef __mymsgs__msg__heart__idl__
+#define __mymsgs__msg__heart__idl__
+
+
+module mymsgs {
+
+module msg {
+
+module dds_ {
+
+
+struct Heart_ {
+unsigned long error_code_;
+octet type_;
+octet base_mode_;
+octet system_status_;
+
+};
+
+
+};  // module dds_
+
+};  // module msg
+
+};  // module mymsgs
+
+
+#endif  // __mymsgs__msg__heart__idl__

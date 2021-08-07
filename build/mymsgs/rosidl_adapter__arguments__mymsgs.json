@@ -1,0 +1,15 @@
+{
+  "package_name": "mymsgs",
+  "non_idl_tuples": [
+    "/home/kyxz/dev_ws/src/mymsgs:msg/Core.msg",
+    "/home/kyxz/dev_ws/src/mymsgs:msg/Gpio.msg",
+    "/home/kyxz/dev_ws/src/mymsgs:msg/Imu.msg",
+    "/home/kyxz/dev_ws/src/mymsgs:msg/Twis.msg",
+    "/home/kyxz/dev_ws/src/mymsgs:msg/Version.msg",
+    "/home/kyxz/dev_ws/src/mymsgs:msg/Heart.msg",
+    "/home/kyxz/dev_ws/src/mymsgs:msg/Attitued.msg",
+    "/home/kyxz/dev_ws/src/mymsgs:msg/Control.msg",
+    "/home/kyxz/dev_ws/src/mymsgs:msg/PacketMsg.msg",
+    "/home/kyxz/dev_ws/src/mymsgs:srv/OSConfigSrv.srv"
+  ]
+}

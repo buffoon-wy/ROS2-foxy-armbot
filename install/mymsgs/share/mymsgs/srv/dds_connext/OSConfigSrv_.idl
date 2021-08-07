@@ -1,0 +1,49 @@
+// generated from rosidl_generator_dds_idl/resource/idl.idl.em
+// with input from mymsgs:srv/OSConfigSrv.idl
+// generated code does not contain a copyright notice
+
+#ifndef __mymsgs__srv__os_config_srv__idl__
+#define __mymsgs__srv__os_config_srv__idl__
+
+
+module mymsgs {
+
+module srv {
+
+module dds_ {
+
+
+struct OSConfigSrv_Request_ {
+octet structure_needs_at_least_one_member_;
+
+};
+
+
+};  // module dds_
+
+};  // module srv
+
+};  // module mymsgs
+
+
+module mymsgs {
+
+module srv {
+
+module dds_ {
+
+
+struct OSConfigSrv_Response_ {
+string metadata_;
+
+};
+
+
+};  // module dds_
+
+};  // module srv
+
+};  // module mymsgs
+
+
+#endif  // __mymsgs__srv__os_config_srv__idl__

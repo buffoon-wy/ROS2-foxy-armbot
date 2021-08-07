@@ -1,0 +1,61 @@
+// generated from rosidl_generator_dds_idl/resource/idl.idl.em
+// with input from ur_msgs:msg/RobotStateRTMsg.idl
+// generated code does not contain a copyright notice
+
+#ifndef __ur_msgs__msg__robot_state_rt_msg__idl__
+#define __ur_msgs__msg__robot_state_rt_msg__idl__
+
+
+module ur_msgs {
+
+module msg {
+
+module dds_ {
+
+
+struct RobotStateRTMsg_ {
+double time_;
+sequence<double> q_target_;
+
+sequence<double> qd_target_;
+
+sequence<double> qdd_target_;
+
+sequence<double> i_target_;
+
+sequence<double> m_target_;
+
+sequence<double> q_actual_;
+
+sequence<double> qd_actual_;
+
+sequence<double> i_actual_;
+
+sequence<double> tool_acc_values_;
+
+sequence<double> tcp_force_;
+
+sequence<double> tool_vector_;
+
+sequence<double> tcp_speed_;
+
+double digital_input_bits_;
+sequence<double> motor_temperatures_;
+
+double controller_timer_;
+double test_value_;
+double robot_mode_;
+sequence<double> joint_modes_;
+
+
+};
+
+
+};  // module dds_
+
+};  // module msg
+
+};  // module ur_msgs
+
+
+#endif  // __ur_msgs__msg__robot_state_rt_msg__idl__

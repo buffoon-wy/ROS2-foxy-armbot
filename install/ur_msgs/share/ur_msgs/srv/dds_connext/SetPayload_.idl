@@ -1,0 +1,51 @@
+// generated from rosidl_generator_dds_idl/resource/idl.idl.em
+// with input from ur_msgs:srv/SetPayload.idl
+// generated code does not contain a copyright notice
+#include "geometry_msgs/msg/dds_connext/Vector3_.idl"
+
+#ifndef __ur_msgs__srv__set_payload__idl__
+#define __ur_msgs__srv__set_payload__idl__
+
+
+module ur_msgs {
+
+module srv {
+
+module dds_ {
+
+
+struct SetPayload_Request_ {
+float payload_;
+geometry_msgs::msg::dds_::Vector3_ center_of_gravity_;
+
+};
+
+
+};  // module dds_
+
+};  // module srv
+
+};  // module ur_msgs
+
+
+module ur_msgs {
+
+module srv {
+
+module dds_ {
+
+
+struct SetPayload_Response_ {
+boolean success_;
+
+};
+
+
+};  // module dds_
+
+};  // module srv
+
+};  // module ur_msgs
+
+
+#endif  // __ur_msgs__srv__set_payload__idl__

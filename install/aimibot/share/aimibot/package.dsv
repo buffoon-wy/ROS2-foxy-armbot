@@ -1,0 +1,8 @@
+source;share/aimibot/hook/cmake_prefix_path.ps1
+source;share/aimibot/hook/cmake_prefix_path.dsv
+source;share/aimibot/hook/cmake_prefix_path.sh
+source;share/aimibot/local_setup.bash
+source;share/aimibot/local_setup.dsv
+source;share/aimibot/local_setup.ps1
+source;share/aimibot/local_setup.sh
+source;share/aimibot/local_setup.zsh

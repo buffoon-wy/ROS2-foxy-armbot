@@ -1,0 +1,44 @@
+// generated from rosidl_generator_dds_idl/resource/idl.idl.em
+// with input from ur_msgs:msg/ToolDataMsg.idl
+// generated code does not contain a copyright notice
+
+#ifndef __ur_msgs__msg__tool_data_msg__idl__
+#define __ur_msgs__msg__tool_data_msg__idl__
+
+
+module ur_msgs {
+
+module msg {
+
+module dds_ {
+
+module ToolDataMsg_Constants {
+const octet ANALOG_INPUT_RANGE_CURRENT_ = 0;
+const octet ANALOG_INPUT_RANGE_VOLTAGE_ = 1;
+const octet TOOL_BOOTLOADER_MODE_ = 249;
+const octet TOOL_RUNNING_MODE_ = 253;
+const octet TOOL_IDLE_MODE_ = 255;
+
+};
+
+struct ToolDataMsg_ {
+octet analog_input_range2_;
+octet analog_input_range3_;
+double analog_input2_;
+double analog_input3_;
+octet tool_output_voltage_;
+float tool_current_;
+float tool_temperature_;
+octet tool_mode_;
+
+};
+
+
+};  // module dds_
+
+};  // module msg
+
+};  // module ur_msgs
+
+
+#endif  // __ur_msgs__msg__tool_data_msg__idl__

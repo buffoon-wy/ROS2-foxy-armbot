@@ -1,0 +1,2 @@
+float32 payload
+geometry_msgs/Vector3 center_of_gravity

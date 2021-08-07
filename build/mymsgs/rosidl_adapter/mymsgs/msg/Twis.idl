@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mymsgs/msg/Twis.msg
+// generated code does not contain a copyright notice
+
+
+module mymsgs {
+  module msg {
+    struct Twis {
+      uint32 time_boot_ms;
+
+      double vx;
+
+      double vy;
+
+      double vz;
+
+      double wx;
+
+      double wy;
+
+      double wz;
+    };
+  };
+};

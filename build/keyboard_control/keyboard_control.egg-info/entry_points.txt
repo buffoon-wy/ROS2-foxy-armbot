@@ -1,0 +1,3 @@
+[console_scripts]
+key_publisher = keyboard_control.pub:main
+

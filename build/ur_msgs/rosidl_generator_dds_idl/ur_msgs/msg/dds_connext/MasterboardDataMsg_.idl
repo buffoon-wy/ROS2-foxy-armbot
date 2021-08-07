@@ -1,0 +1,43 @@
+// generated from rosidl_generator_dds_idl/resource/idl.idl.em
+// with input from ur_msgs:msg/MasterboardDataMsg.idl
+// generated code does not contain a copyright notice
+
+#ifndef __ur_msgs__msg__masterboard_data_msg__idl__
+#define __ur_msgs__msg__masterboard_data_msg__idl__
+
+
+module ur_msgs {
+
+module msg {
+
+module dds_ {
+
+
+struct MasterboardDataMsg_ {
+unsigned long digital_input_bits_;
+unsigned long digital_output_bits_;
+octet analog_input_range0_;
+octet analog_input_range1_;
+double analog_input0_;
+double analog_input1_;
+octet analog_output_domain0_;
+octet analog_output_domain1_;
+double analog_output0_;
+double analog_output1_;
+float masterboard_temperature_;
+float robot_current_;
+float master_io_current_;
+octet master_safety_state_;
+octet master_onoff_state_;
+
+};
+
+
+};  // module dds_
+
+};  // module msg
+
+};  // module ur_msgs
+
+
+#endif  // __ur_msgs__msg__masterboard_data_msg__idl__

@@ -1,0 +1,31 @@
+// generated from rosidl_generator_dds_idl/resource/idl.idl.em
+// with input from mymsgs:msg/Gpio.idl
+// generated code does not contain a copyright notice
+
+#ifndef __mymsgs__msg__gpio__idl__
+#define __mymsgs__msg__gpio__idl__
+
+
+module mymsgs {
+
+module msg {
+
+module dds_ {
+
+
+struct Gpio_ {
+unsigned long time_boot_ms_;
+unsigned long output_;
+unsigned long input_;
+
+};
+
+
+};  // module dds_
+
+};  // module msg
+
+};  // module mymsgs
+
+
+#endif  // __mymsgs__msg__gpio__idl__
