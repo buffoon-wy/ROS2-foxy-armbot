@@ -25,7 +25,7 @@ find_package(sensor_msgs REQUIRED)
 find_package(mymsgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(tf2_ros REQUIRED)
-
+find_package(geometry_msgs REQUIRED)
 find_package(Eigen3 REQUIRED)
 include_directories(${EIGEN3_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS})
 # uncomment the following section in order to fill in
@@ -36,6 +36,10 @@ ament_target_dependencies(aimibot rclcpp std_msgs mymsgs sensor_msgs geometry_ms
 
 add_executable(nav_test src/test.cpp)
 ament_target_dependencies(nav_test rclcpp std_msgs nav_msgs geometry_msgs tf2_ros)
+
+add_executable(navigation src/navigation.cpp)
+ament_target_dependencies(navigation rclcpp nav_msgs mymsgs geometry_msgs)
+
 
 install(TARGETS
   aimibot
@@ -51,7 +55,7 @@ install(
 )
 
 install(TARGETS
-  nav_test
+  nav_test navigation
   DESTINATION
   lib/${PROJECT_NAME})
 ament_export_include_directories(include)

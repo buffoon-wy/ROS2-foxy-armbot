@@ -67,7 +67,7 @@
     <child link="inertial_link"/>
   </joint>
   <!--  configure the laser -->
-  <link name="ouster_laser_link">
+  <link name="base_scan">
     <visual>
       <geometry>
         <mesh filename="package://armbot_description/meshes/laser_link.STL"/>
@@ -77,7 +77,7 @@
   <joint name="ouster_laser_extension" type="fixed">
     <origin rpy="0 0 0" xyz="0.41 0 0.37"/>
     <parent link="base_link"/>
-    <child link="ouster_laser_link"/>
+    <child link="base_scan"/>
   </joint>
   <link name="front_left_wheel_link">
     <inertial>

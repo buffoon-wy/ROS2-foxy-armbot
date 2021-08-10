@@ -34,7 +34,8 @@ set(msg_files
 )
 
 set(srv_files
-"srv/OSConfigSrv.srv"   
+"srv/OSConfigSrv.srv" 
+"srv/NewTarget.srv"  
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
