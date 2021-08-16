@@ -156,7 +156,7 @@ void aimibot::init()
     reset_odometry();
     joint_states.name.push_back("leftwheel_joint");
     joint_states.name.push_back("rightwheel_joint");
-	char *uart_name = (char *)"/dev/ttyUSB0";
+	char *uart_name = (char *)"/dev/ttyS0";
 	int baudrate = 921600;
 	interface.Set_Serial(uart_name,baudrate);
     seial_get();
